@@ -1,8 +1,8 @@
 import { getRepository } from 'typeorm';
 import { hash } from 'bcryptjs';
 
-import AppError from '../errors/AppError';
-import User from '../models/Users';
+import AppError from '@shared/errors/AppError';
+import User from '../infra/typeorm/entities/Users';
 /**
  * Dto com nome de request pois recebe dados das routes
  */
